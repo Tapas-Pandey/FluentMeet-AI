@@ -1,0 +1,30 @@
+#seamless-translation-box {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #06b6d4;
+  border: 1px solid #d946ef;
+  border-radius: 8px;
+  z-index: 2147483647; /* Max z-index to stay above Google Meet UI */
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.5);
+  pointer-events: none; /* Let clicks pass through to Google Meet */
+}
+
+#seamless-translation-box .header {
+  font-weight: bold;
+  border-bottom: 1px solid #d946ef;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+  color: #d946ef;
+}
+
+#translation-content {
+  font-size: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
