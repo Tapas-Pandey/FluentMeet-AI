@@ -24,21 +24,21 @@ graph TD
     %% Google Meet Integration
     subgraph "Google Chrome"
         subgraph "Active Google Meet Tab"
-            GM[Google Meet Call]
-            UI[Translation Overlay<br/>(content.js & style.css)]
+            GM["Google Meet Call"]
+            UI["Translation Overlay<br/>(content.js & style.css)"]
         end
 
         subgraph "Extension Background"
-            BG[Service Worker<br/>(background.js)]
-            TabAPI((chrome.tabCapture))
+            BG["Service Worker<br/>(background.js)"]
+            TabAPI(("chrome.tabCapture"))
         end
 
         subgraph "Offscreen Processing Engine"
-            Audio[Web Audio Context & Worklet<br/>(audio-worklet.js)]
-            AI[Local Machine Learning<br/>Transformers.js (Whisper + Opus-MT)]
+            Audio["Web Audio Context & Worklet<br/>(audio-worklet.js)"]
+            AI["Local Machine Learning<br/>Transformers.js (Whisper + Opus-MT)"]
         end
         
-        Speakers((System Speakers))
+        Speakers(("System Speakers"))
     end
 
     %% Flow relationships
